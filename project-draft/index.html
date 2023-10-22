@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Yixiang Fang, Michaelangelo Labrador, Samaya Badrieh, Amrith Gandham">
+    <meta name="description" content="This page is the profile of the pillbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pillbox profile</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto+Flex:opsz@8..144&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <header class="px-0 py-0">
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Dose</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-label="My Pillbox Page" class="nav-link" href="index.html">My Pillbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-label="Search Page" class="nav-link" href="Static_MockUp/Search.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-label="Upload Meds Page" class="nav-link" href="Static_MockUp/Upload.html">Upload
+                                Meds</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!--<div class="pill-container">
+                <div class="pill-item">
+                    <h2>Coumadin</h2>
+                        <img class="profile-image" src="img/pillbox-image1.jpg" alt="first image of pillbox">
+                        <p class="time-remaining">Weeks Left: 20</p>
+                </div>
+                <div class="pill-item">
+                    <h2>Coumadin</h2>
+                        <img class="profile-image" src="img/pillbox-image2.jpg" alt="secondimage of pillbox">
+                        <p class="time-remaining">Weeks Left: 20</p>
+                </div>
+                <div class="pill-item">
+                    <h2>Coumadin</h2>
+                        <img class="profile-image" src="img/pillbox-image3.jpg" alt="third image of pillbox">
+                        <p class="time-remaining">Weeks Left: 20</p>
+                </div>
+            </div>-->
+            <!-- a div with the .container class wrapping everything is required when using grids on a page (also nifty for good looking padding)-->
+            <div class="container">
+
+                <!-- .row for bootstrap grid -->
+                <!-- .my-4 means we add 4 units of margin on the y-axis (so it doesn't touch the navbar or footer) -->
+                <!-- **TO TRY** Try taking out my-4 and see what happends -->
+                <div class="row my-4">
+
+                    <!-- .col-12 means it automatically makes the column take up all 12 spaces in the row -->
+                    <!-- .col-md-6 means when we reach a medium screen and bigger (≥768px) each column takes up 6 spaces in the row -->
+                    <!-- .col-lg-4 means when we reach a large screen and bigger (≥992px) each column takes up 4 spaces in the row -->
+                    <!-- .d-flex turns the column into a flexbox so we can use justify-content to make sure the cards are centered in the column -->
+                    <!-- .justify-content-center makes the cards centered in the column (esp important for small screens)-->
+                    <!-- **TO TRY** Try taking out justify-content-center and see what happends when you go to smaller screens (under 400px)-->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-start">
+
+                        <!-- copied bootstrap's card from their example and added in your info-->
+                        <!-- https://getbootstrap.com/docs/5.3/components/card/#example -->
+                        <div class="card my-2" style="width: 18rem">
+                            <img src="img/days/monday.png" class="card-img-top" alt="monday pillbox">
+                            <div class="accordion" id="monday-pills">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#advil-monday" aria-expanded="true"
+                                            aria-controls="advil-monday">
+                                            Advil
+                                        </button>
+                                    </h2>
+                                    <div id="advil-monday" class="accordion-collapse collapse show"
+                                        data-bs-parent="#monday-pills">
+                                        <div class="accordion-body">
+                                            <p>Description: for headaches</p>
+                                            <p>Dosage: 2 times a day every 6 hours </p>
+                                            <p>Number of Pills Left: 50</p>
+                                            <p>Weeks until next refill: 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex align-items-start col-12 col-md-6 col-lg-4">
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="img/days/tuesday.png" class="card-img-top" alt="tuesdaypillbox">
+                            <div class="accordion" id="tuesday-pills">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#advil-tuesday" aria-expanded="true"
+                                            aria-controls="advil-tuesday">
+                                            Advil
+                                        </button>
+                                    </h2>
+                                    <div id="advil-tuesday" class="accordion-collapse collapse show"
+                                        data-bs-parent="#tuesday-pills">
+                                        <div class="accordion-body">
+                                            <p>Description: for headaches</p>
+                                            <p>Dosage: 2 times a day every 6 hours </p>
+                                            <p>Number of Pills Left: 50</p>
+                                            <p>Weeks until next refill: 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start col-12 col-md-6 col-lg-4">
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="img/days/wednesday.png" class="card-img-top" alt="wednesday pillbox">
+                            <div class="accordion" id="wednesday-pills">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#advil-wednesday" aria-expanded="true"
+                                            aria-controls="advil-wednesday">
+                                            Advil
+                                        </button>
+                                    </h2>
+                                    <div id="advil-wednesday" class="accordion-collapse collapse show"
+                                        data-bs-parent="#wednesday-pills">
+                                        <div class="accordion-body">
+                                            <p>Description: for headaches</p>
+                                            <p>Dosage: 2 times a day every 6 hours </p>
+                                            <p>Number of Pills Left: 50</p>
+                                            <p>Weeks until next refill: 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start col-12 col-md-6 col-lg-4">
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="img/days/thursday.png" class="card-img-top" alt="thursday pillbox">
+                            <div class="accordion" id="thursday-pills">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#advil-thursday" aria-expanded="true"
+                                            aria-controls="advil-thursday">
+                                            Advil
+                                        </button>
+                                    </h2>
+                                    <div id="advil-thursday" class="accordion-collapse collapse show"
+                                        data-bs-parent="#thursday-pills">
+                                        <div class="accordion-body">
+                                            <p>Description: for headaches</p>
+                                            <p>Dosage: 2 times a day every 6 hours </p>
+                                            <p>Number of Pills Left: 50</p>
+                                            <p>Weeks until next refill: 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start col-12 col-md-6 col-lg-4">
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="img/days/friday.png" class="card-img-top" alt="friday pillbox">
+                            <div class="accordion" id="thursday-pills">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#advil-friday" aria-expanded="true"
+                                            aria-controls="advil-friday">
+                                            Advil
+                                        </button>
+                                    </h2>
+                                    <div id="advil-friday" class="accordion-collapse collapse show"
+                                        data-bs-parent="#friday-pills">
+                                        <div class="accordion-body">
+                                            <p>Description: for headaches</p>
+                                            <p>Dosage: 2 times a day every 6 hours </p>
+                                            <p>Number of Pills Left: 50</p>
+                                            <p>Weeks until next refill: 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start col-12 col-md-6 col-lg-4">
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="img/days/saturday.png" class="card-img-top" alt="saturday pillbox">
+                            <div class="accordion" id="thursday-pills">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#advil-saturday" aria-expanded="true"
+                                            aria-controls="advil-saturday">
+                                            Advil
+                                        </button>
+                                    </h2>
+                                    <div id="advil-saturday" class="accordion-collapse collapse show"
+                                        data-bs-parent="#saturday-pills">
+                                        <div class="accordion-body">
+                                            <p>Description: for headaches</p>
+                                            <p>Dosage: 2 times a day every 6 hours </p>
+                                            <p>Number of Pills Left: 50</p>
+                                            <p>Weeks until next refill: 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start col-12 col-md-6 col-lg-4">
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="img/days/sunday.png" class="card-img-top" alt="sunday pillbox">
+                            <div class="accordion" id="thursday-pills">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#advil-sunday" aria-expanded="true"
+                                            aria-controls="advil-sunday">
+                                            Advil
+                                        </button>
+                                    </h2>
+                                    <div id="advil-sunday" class="accordion-collapse collapse show"
+                                        data-bs-parent="#sunday-pills">
+                                        <div class="accordion-body">
+                                            <p>Description: for headaches</p>
+                                            <p>Dosage: 2 times a day every 6 hours </p>
+                                            <p>Number of Pills Left: 50</p>
+                                            <p>Weeks until next refill: 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <p>Website created by INFO Group A5.</p>
+            <p>&copy; 2023 INFO Group A5.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

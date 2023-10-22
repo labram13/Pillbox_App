@@ -1,0 +1,28 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+h3 {
+   margin-left: 30rem;
+  margin-right: 30rem;
+  border-style: dotted;
+
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+li {
+  font-family: Arial;
+}
+
+body {
+  background-image: url('../img/towfiqu-barbhuiya-w8p9cQDLX7I-unsplash.jpg');
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+}

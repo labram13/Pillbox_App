@@ -1,0 +1,114 @@
+/* General styling rules that apply to every page*/
+body {
+  background-color: #feffff;
+}
+
+/* nav rules */
+nav {
+  background-color: #95f0f8;
+}
+
+.container-fluid .navbar-brand {
+  font-family: 'Rammetto One', sans-serif;
+  font-size: 40px;
+  background-image: url('../public/img/line-6.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 120px;
+  color: #000000;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5)
+}
+
+.nav-item {
+  font-family: 'Roboto Flex';
+}
+
+/* font styling for page */
+
+main,
+footer {
+  font-family: "Roboto Flex";
+}
+
+/* Rules for the "Upload meds" page */
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+.container .page-links {
+  display: none;
+}
+
+/* Rules for our headers for each page */
+header {
+  font-family: 'Rammetto One', sans-serif;
+  font-size: 15px;
+}
+
+/* Rules for the "Search" page */
+/* Rules for aspects of the "Search" input bar */
+.search-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 10px;
+  border: 1.4px solid black;
+  margin-bottom: 12px;
+}
+
+.search-input[type="text"],
+textarea {
+  background-color: white;
+}
+
+/* Rules for aspects of the searchable drug list */
+.searchable-drugs-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchable-drugs-ul li a {
+  border: 1px solid #efe9b8;
+  margin-top: -1px;
+  background-color: #fffad4;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  display: block;
+}
+
+.searchable-drugs-ul li a:hover:not(.header) {
+  background-color: #ffd4f0;
+  border-color: #efb8e8;
+}
+
+.customMargin {
+  margin-top: 70px;
+  margin-bottom: 180px;
+}
+
+.marginTop {
+  margin-top: 80px;
+}
+
+.marginBottom {
+  margin-bottom: 250px;
+}
+
+/* Media query to enable varied display of our app on different devices: */
+@media (min-width: 598px) {
+
+  /* logo size change */
+  .container-fluid .navbar-brand {
+    font-size: 50px;
+    background-size: 130px;
+  }
+
+  .searchable-drugs-ul li a {
+    font-size: 18px;
+  }
+}

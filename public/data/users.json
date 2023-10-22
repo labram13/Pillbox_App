@@ -1,0 +1,41 @@
+[
+  {
+    "user": "John",
+    "email": "johndoe@johndoe.com",
+    "password": "password",
+    "prescriptions": [
+      {
+        "pillName": "tylenol",
+        "dose": 3,
+        "quantity": 40,
+        "refills": 6,
+        "days": [
+          "monday",
+          "tuesday",
+          "wednesday"
+        ],
+        "description": "for headaches",
+        "symptoms": "none"
+      }
+    ]
+  },
+  {
+    "user": "Jane",
+    "email": "janedoe@janedoe.com",
+    "password": "password",
+    "prescriptions": [
+      {
+        "pillName": "chill pill",
+        "dose": 3,
+        "quantity": 40,
+        "refills": 6,
+        "days": [
+          "saturday",
+          "sunday"
+        ],
+        "description": "for headaches",
+        "symptoms": "none"
+      }
+    ]
+  }
+]
